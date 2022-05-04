@@ -464,7 +464,7 @@ namespace CV_Maker_with_RDLC_Report_.Net_Core_MVC.DataSet {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             internal void InitVars() {
-                this.columnTraining_Title = base.Columns["Training Title"];
+                this.columnTraining_Title = base.Columns["Training_Title"];
                 this.columnTopic = base.Columns["Topic"];
                 this.columnInstitute = base.Columns["Institute"];
                 this.columnCountry = base.Columns["Country"];
@@ -474,7 +474,7 @@ namespace CV_Maker_with_RDLC_Report_.Net_Core_MVC.DataSet {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             private void InitClass() {
-                this.columnTraining_Title = new global::System.Data.DataColumn("Training Title", typeof(string), null, global::System.Data.MappingType.Element);
+                this.columnTraining_Title = new global::System.Data.DataColumn("Training_Title", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnTraining_Title);
                 this.columnTopic = new global::System.Data.DataColumn("Topic", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnTopic);
@@ -619,13 +619,13 @@ namespace CV_Maker_with_RDLC_Report_.Net_Core_MVC.DataSet {
             
             private global::System.Data.DataColumn columnTitle;
             
-            private global::System.Data.DataColumn _columnConcentration_Major;
+            private global::System.Data.DataColumn columnMajor;
             
             private global::System.Data.DataColumn columnInstitute;
             
             private global::System.Data.DataColumn columnResult;
             
-            private global::System.Data.DataColumn _columnPas_Year;
+            private global::System.Data.DataColumn columnPassYear;
             
             private global::System.Data.DataColumn columnDuration;
             
@@ -672,9 +672,9 @@ namespace CV_Maker_with_RDLC_Report_.Net_Core_MVC.DataSet {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn _Concentration_MajorColumn {
+            public global::System.Data.DataColumn MajorColumn {
                 get {
-                    return this._columnConcentration_Major;
+                    return this.columnMajor;
                 }
             }
             
@@ -696,9 +696,9 @@ namespace CV_Maker_with_RDLC_Report_.Net_Core_MVC.DataSet {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn _Pas_YearColumn {
+            public global::System.Data.DataColumn PassYearColumn {
                 get {
-                    return this._columnPas_Year;
+                    return this.columnPassYear;
                 }
             }
             
@@ -747,14 +747,14 @@ namespace CV_Maker_with_RDLC_Report_.Net_Core_MVC.DataSet {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public Academic_QualificationRow AddAcademic_QualificationRow(string Title, string _Concentration_Major, string Institute, string Result, string _Pas_Year, string Duration) {
+            public Academic_QualificationRow AddAcademic_QualificationRow(string Title, string Major, string Institute, string Result, string PassYear, string Duration) {
                 Academic_QualificationRow rowAcademic_QualificationRow = ((Academic_QualificationRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         Title,
-                        _Concentration_Major,
+                        Major,
                         Institute,
                         Result,
-                        _Pas_Year,
+                        PassYear,
                         Duration};
                 rowAcademic_QualificationRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowAcademic_QualificationRow);
@@ -779,10 +779,10 @@ namespace CV_Maker_with_RDLC_Report_.Net_Core_MVC.DataSet {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             internal void InitVars() {
                 this.columnTitle = base.Columns["Title"];
-                this._columnConcentration_Major = base.Columns["Concentration/Major"];
+                this.columnMajor = base.Columns["Major"];
                 this.columnInstitute = base.Columns["Institute"];
                 this.columnResult = base.Columns["Result"];
-                this._columnPas_Year = base.Columns["Pas.Year"];
+                this.columnPassYear = base.Columns["PassYear"];
                 this.columnDuration = base.Columns["Duration"];
             }
             
@@ -791,18 +791,14 @@ namespace CV_Maker_with_RDLC_Report_.Net_Core_MVC.DataSet {
             private void InitClass() {
                 this.columnTitle = new global::System.Data.DataColumn("Title", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnTitle);
-                this._columnConcentration_Major = new global::System.Data.DataColumn("Concentration/Major", typeof(string), null, global::System.Data.MappingType.Element);
-                this._columnConcentration_Major.ExtendedProperties.Add("Generator_ColumnVarNameInTable", "_columnConcentration_Major");
-                this._columnConcentration_Major.ExtendedProperties.Add("Generator_UserColumnName", "Concentration/Major");
-                base.Columns.Add(this._columnConcentration_Major);
+                this.columnMajor = new global::System.Data.DataColumn("Major", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMajor);
                 this.columnInstitute = new global::System.Data.DataColumn("Institute", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnInstitute);
                 this.columnResult = new global::System.Data.DataColumn("Result", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnResult);
-                this._columnPas_Year = new global::System.Data.DataColumn("Pas.Year", typeof(string), null, global::System.Data.MappingType.Element);
-                this._columnPas_Year.ExtendedProperties.Add("Generator_ColumnVarNameInTable", "_columnPas_Year");
-                this._columnPas_Year.ExtendedProperties.Add("Generator_UserColumnName", "Pas.Year");
-                base.Columns.Add(this._columnPas_Year);
+                this.columnPassYear = new global::System.Data.DataColumn("PassYear", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPassYear);
                 this.columnDuration = new global::System.Data.DataColumn("Duration", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnDuration);
             }
@@ -953,7 +949,7 @@ namespace CV_Maker_with_RDLC_Report_.Net_Core_MVC.DataSet {
                         return ((string)(this[this.tableTraining_Summary.Training_TitleColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Training Title\' in table \'Training Summary\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'Training_Title\' in table \'Training Summary\' is DBNull.", e);
                     }
                 }
                 set {
@@ -1118,18 +1114,17 @@ namespace CV_Maker_with_RDLC_Report_.Net_Core_MVC.DataSet {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string _Concentration_Major {
+            public string Major {
                 get {
                     try {
-                        return ((string)(this[this.tableAcademic_Qualification._Concentration_MajorColumn]));
+                        return ((string)(this[this.tableAcademic_Qualification.MajorColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Concentration/Major\' in table \'Academic Qualification\' is D" +
-                                "BNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'Major\' in table \'Academic Qualification\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableAcademic_Qualification._Concentration_MajorColumn] = value;
+                    this[this.tableAcademic_Qualification.MajorColumn] = value;
                 }
             }
             
@@ -1167,17 +1162,17 @@ namespace CV_Maker_with_RDLC_Report_.Net_Core_MVC.DataSet {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string _Pas_Year {
+            public string PassYear {
                 get {
                     try {
-                        return ((string)(this[this.tableAcademic_Qualification._Pas_YearColumn]));
+                        return ((string)(this[this.tableAcademic_Qualification.PassYearColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Pas.Year\' in table \'Academic Qualification\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'PassYear\' in table \'Academic Qualification\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableAcademic_Qualification._Pas_YearColumn] = value;
+                    this[this.tableAcademic_Qualification.PassYearColumn] = value;
                 }
             }
             
@@ -1211,14 +1206,14 @@ namespace CV_Maker_with_RDLC_Report_.Net_Core_MVC.DataSet {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool Is_Concentration_MajorNull() {
-                return this.IsNull(this.tableAcademic_Qualification._Concentration_MajorColumn);
+            public bool IsMajorNull() {
+                return this.IsNull(this.tableAcademic_Qualification.MajorColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void Set_Concentration_MajorNull() {
-                this[this.tableAcademic_Qualification._Concentration_MajorColumn] = global::System.Convert.DBNull;
+            public void SetMajorNull() {
+                this[this.tableAcademic_Qualification.MajorColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1247,14 +1242,14 @@ namespace CV_Maker_with_RDLC_Report_.Net_Core_MVC.DataSet {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool Is_Pas_YearNull() {
-                return this.IsNull(this.tableAcademic_Qualification._Pas_YearColumn);
+            public bool IsPassYearNull() {
+                return this.IsNull(this.tableAcademic_Qualification.PassYearColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void Set_Pas_YearNull() {
-                this[this.tableAcademic_Qualification._Pas_YearColumn] = global::System.Convert.DBNull;
+            public void SetPassYearNull() {
+                this[this.tableAcademic_Qualification.PassYearColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
