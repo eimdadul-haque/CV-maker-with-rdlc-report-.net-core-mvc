@@ -19,7 +19,7 @@ namespace CV_Maker_with_RDLC_Report_.Net_Core_MVC.Controllers
         public IActionResult Print()
         {
             string imgParam = "";
-            string imgPath = Path.Combine(_environment.WebRootPath, "Deep Blue.jpg");
+            string imgPath = Path.Combine(_environment.WebRootPath, "698.JPG");
             string rdlcPath = Path.Combine(_environment.WebRootPath, "Report", "Report1.rdlc");
 
             using (var bit = new Bitmap(imgPath))

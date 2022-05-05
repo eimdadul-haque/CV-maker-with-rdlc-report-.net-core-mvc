@@ -97,10 +97,10 @@
             <Value>=Parameters!image.Value</Value>
             <MIMEType>image/png</MIMEType>
             <Sizing>FitProportional</Sizing>
-            <Top>0.55556in</Top>
-            <Left>4.56251in</Left>
-            <Height>1.33333in</Height>
-            <Width>1.83333in</Width>
+            <Top>0.70014in</Top>
+            <Left>5.35438in</Left>
+            <Height>1.18875in</Height>
+            <Width>1.04146in</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -175,7 +175,7 @@ Email: eimdadulhaque@gmail.com</Value>
             <Top>2.04042in</Top>
             <Left>0.1471in</Left>
             <Height>0in</Height>
-            <Width>6.49875in</Width>
+            <Width>6.24874in</Width>
             <ZIndex>3</ZIndex>
             <Style>
               <Border>
@@ -201,7 +201,7 @@ Email: eimdadulhaque@gmail.com</Value>
             <Top>2.34597in</Top>
             <Left>0.1471in</Left>
             <Height>0.40625in</Height>
-            <Width>6.49875in</Width>
+            <Width>6.24874in</Width>
             <ZIndex>4</ZIndex>
             <Style>
               <Border>
@@ -266,7 +266,7 @@ Data Structure, Algorithm, OOP, Design Pattern, SOLID, HTML, CSS &amp; Git</Valu
             <Top>3.00222in</Top>
             <Left>0.1471in</Left>
             <Height>0.39584in</Height>
-            <Width>6.49875in</Width>
+            <Width>6.24874in</Width>
             <ZIndex>6</ZIndex>
             <Style>
               <Border>
@@ -351,7 +351,7 @@ will give you a basic CV template and download option. Source Code</Value>
             <Top>3.64806in</Top>
             <Left>0.1471in</Left>
             <Height>0.39584in</Height>
-            <Width>6.49875in</Width>
+            <Width>6.24874in</Width>
             <ZIndex>8</ZIndex>
             <Style>
               <Border>
@@ -415,7 +415,7 @@ will give you a basic CV template and download option. Source Code</Value>
             <Top>4.2939in</Top>
             <Left>0.1471in</Left>
             <Height>0.39584in</Height>
-            <Width>6.49875in</Width>
+            <Width>6.24874in</Width>
             <ZIndex>10</ZIndex>
             <Style>
               <Border>
@@ -545,9 +545,9 @@ Certificate of Participation (ICPC)</Value>
             </Paragraphs>
             <rd:DefaultName>Textbox4</rd:DefaultName>
             <Top>6.43974in</Top>
-            <Left>0.13668in</Left>
+            <Left>0.11584in</Left>
             <Height>0.39584in</Height>
-            <Width>6.49875in</Width>
+            <Width>6.25916in</Width>
             <ZIndex>14</ZIndex>
             <Style>
               <Border>
@@ -612,7 +612,7 @@ researchgate.net/profile/Eimdadul_Moon</Value>
             <Top>7.08558in</Top>
             <Left>0.12626in</Left>
             <Height>0.39584in</Height>
-            <Width>6.49875in</Width>
+            <Width>6.26958in</Width>
             <ZIndex>16</ZIndex>
             <Style>
               <Border>
@@ -673,9 +673,9 @@ researchgate.net/profile/Eimdadul_Moon</Value>
             </Paragraphs>
             <rd:DefaultName>Textbox4</rd:DefaultName>
             <Top>7.73142in</Top>
-            <Left>0.11584in</Left>
+            <Left>0.10542in</Left>
             <Height>0.39584in</Height>
-            <Width>6.49875in</Width>
+            <Width>6.28in</Width>
             <ZIndex>18</ZIndex>
             <Style>
               <Border>
@@ -724,19 +724,19 @@ researchgate.net/profile/Eimdadul_Moon</Value>
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>1.29975in</Width>
+                  <Width>1.24975in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.29975in</Width>
+                  <Width>1.24975in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.29975in</Width>
+                  <Width>1.24975in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.29975in</Width>
+                  <Width>1.24975in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.29975in</Width>
+                  <Width>1.24975in</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
@@ -1075,7 +1075,7 @@ researchgate.net/profile/Eimdadul_Moon</Value>
             <Top>4.93974in</Top>
             <Left>0.1471in</Left>
             <Height>0.5in</Height>
-            <Width>6.49875in</Width>
+            <Width>6.24874in</Width>
             <ZIndex>20</ZIndex>
             <Style>
               <Border>
@@ -1087,22 +1087,22 @@ researchgate.net/profile/Eimdadul_Moon</Value>
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>1.08313in</Width>
+                  <Width>1.04146in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.08313in</Width>
+                  <Width>1.04146in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.08313in</Width>
+                  <Width>1.04146in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.08313in</Width>
+                  <Width>1.04146in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.08313in</Width>
+                  <Width>1.04146in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.08313in</Width>
+                  <Width>1.04146in</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
@@ -1502,7 +1502,7 @@ researchgate.net/profile/Eimdadul_Moon</Value>
             <Top>5.68974in</Top>
             <Left>0.1471in</Left>
             <Height>0.5in</Height>
-            <Width>6.49875in</Width>
+            <Width>6.24874in</Width>
             <ZIndex>21</ZIndex>
             <Style>
               <Border>
@@ -1514,11 +1514,11 @@ researchgate.net/profile/Eimdadul_Moon</Value>
         <Height>8.41891in</Height>
         <Style>
           <Border>
-            <Style>Solid</Style>
+            <Style>None</Style>
           </Border>
         </Style>
       </Body>
-      <Width>11.64585in</Width>
+      <Width>6.50002in</Width>
       <Page>
         <LeftMargin>1in</LeftMargin>
         <RightMargin>1in</RightMargin>
