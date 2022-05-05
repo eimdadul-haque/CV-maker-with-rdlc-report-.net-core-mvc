@@ -16,6 +16,11 @@ namespace CV_Maker_with_RDLC_Report_.Net_Core_MVC.Controllers
             _environment = environment;
         }
 
+        public IActionResult Index()
+        {
+            return View();
+        }
+
         public IActionResult Print()
         {
             string imgParam = "";

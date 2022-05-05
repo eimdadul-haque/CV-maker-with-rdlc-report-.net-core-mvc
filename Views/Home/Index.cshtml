@@ -1,8 +1,38 @@
-﻿@{
+﻿@model CV_Model
+
+@{
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="container">
+    <div class="row d-flex justify-content-between align-items-center">
+        <div class="col-6 ">
+            <div class="form-group">
+                <input onchange="" placeholder="Full Name" type="text" class="form-control" />
+            </div>
+            <div class="form-group mt-2">
+                <textarea onchange="" placeholder="Address" class="form-control"> </textarea>
+            </div>
+        </div>
+        <div class="col-4 ">
+            <img id="image" />
+
+            <div class="form-group mt-2 mb-2">
+                <input style="width:80%" onchange="photoUpload(event)" type="file" class="form-control" />
+            </div>
+        </div>
+
+    </div>
+    <div class="row">
+        <hr />
+        <div class="form-group mt-2">
+            <textarea onchange="" placeholder="Career Objective" class="form-control"> </textarea>
+        </div>
+        <div class="form-group mt-2">
+            <textarea onchange="" placeholder="Special Qualification" class="form-control"> </textarea>
+        </div>
+        <div class="form-group mt-2">
+            <textarea onchange="" placeholder="Project History" class="form-control"> </textarea>
+        </div>
+    </div>
 </div>

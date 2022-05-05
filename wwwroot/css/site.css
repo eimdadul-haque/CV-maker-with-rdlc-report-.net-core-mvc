@@ -16,3 +16,9 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+
+#image{
+    height:100px;
+    object-fit: cover;
+}
