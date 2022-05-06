@@ -4,7 +4,7 @@
     ViewData["Title"] = "Home Page";
 }
 
-<form>
+<form method="post" asp-controller="Home" asp-action="Index">
     <div class="container">
         <div class="row d-flex justify-content-between align-items-center">
             <div class="col-6 ">
@@ -44,17 +44,142 @@
             </div>
             <div class="form-group mt-2">
                 <label>Training Summary*</label>
-                @{
-                    await Html.RenderPartialAsync("_training", @Model.trainingSummary);
-                }
+                <table class="table table-bordered mt-2">
+                    <tr>
+                        <th>Training Title</th>
+                        <th>Topic</th>
+                        <th>Institute</th>
+                        <th>Country</th>
+                        <th>Location</th>
+                        <th>Year</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="form-group mt-2">
+                                <input asp-for="trainingTitle" class="form-control" />
+                            </div>
+                        </td>
+                        <td>
+                            <div class="form-group mt-2">
+                                <input asp-for="topic" class="form-control" />
+                            </div>
+                        </td>
+                        <td>
+                            <div class="form-group mt-2">
+                                <input asp-for="institute" class="form-control" />
+                            </div>
+                        </td>
+                        <td>
+                            <div class="form-group mt-2">
+                                <input asp-for="country" class="form-control" />
+                            </div>
+                        </td>
+                        <td>
+                            <div class="form-group mt-2">
+                                <input asp-for="location" class="form-control" />
+                            </div>
+                        </td>
+                        <td>
+                            <div class="form-group mt-2">
+                                <input asp-for="year" class="form-control" />
+                            </div>
+                        </td>
+                    </tr>
+                </table>
             </div>
             <div class="form-group mt-2">
-                <label>Academic Qualification*</label>
-                @{
-                    await Html.RenderPartialAsync("_academic", @Model.academicQualificatio);
-                }
+                <label>University Information*</label>
+                <table class="table table-bordered mt-2">
+                    <tr>
+                        <th>Title</th>
+                        <th>Major</th>
+                        <th>Institute</th>
+                        <th>Result</th>
+                        <th>Pass Year</th>
+                        <th>Duration</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="form-group mt-2">
+                                <input asp-for="degree_title" class="form-control" />
+                            </div>
+                        </td>
+                        <td>
+                            <div class="form-group mt-2">
+                                <input asp-for="major" class="form-control" />
+                            </div>
+                        </td>
+                        <td>
+                            <div class="form-group mt-2">
+                                <input asp-for="institute" class="form-control" />
+                            </div>
+                        </td>
+                        <td>
+                            <div class="form-group mt-2">
+                                <input asp-for="result" class="form-control" />
+                            </div>
+                        </td>
+                        <td>
+                            <div class="form-group mt-2">
+                                <input asp-for="passYear" class="form-control" />
+                            </div>
+                        </td>
+                        <td>
+                            <div class="form-group mt-2">
+                                <input asp-for="duration" class="form-control" />
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="form-group mt-2">
+                <label>Collage Information*</label>
+                <table class="table table-bordered mt-2">
+                    <tr>
+                        <th>Title</th>
+                        <th>Major</th>
+                        <th>Institute</th>
+                        <th>Result</th>
+                        <th>Pass Year</th>
+                        <th>Duration</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="form-group mt-2">
+                                <input asp-for="titleHS" class="form-control" />
+                            </div>
+                        </td>
+                        <td>
+                            <div class="form-group mt-2">
+                                <input asp-for="majorHS" class="form-control" />
+                            </div>
+                        </td>
+                        <td>
+                            <div class="form-group mt-2">
+                                <input asp-for="collage" class="form-control" />
+                            </div>
+                        </td>
+                        <td>
+                            <div class="form-group mt-2">
+                                <input asp-for="resultHS" class="form-control" />
+                            </div>
+                        </td>
+                        <td>
+                            <div class="form-group mt-2">
+                                <input asp-for="passYearHS" class="form-control" />
+                            </div>
+                        </td>
+                        <td>
+                            <div class="form-group mt-2">
+                                <input asp-for="durationHS" class="form-control" />
+                            </div>
+                        </td>
+                    </tr>
+                </table>
             </div>
 
         </div>
-
+        <div class="form-group">
+              <input type="submit" class="form-control" />
+        </div>
 </form>
