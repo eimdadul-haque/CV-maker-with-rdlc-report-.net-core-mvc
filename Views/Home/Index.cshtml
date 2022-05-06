@@ -4,35 +4,57 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="container">
-    <div class="row d-flex justify-content-between align-items-center">
-        <div class="col-6 ">
-            <div class="form-group">
-                <input onchange="" placeholder="Full Name" type="text" class="form-control" />
+<form>
+    <div class="container">
+        <div class="row d-flex justify-content-between align-items-center">
+            <div class="col-6 ">
+                <div class="form-group">
+                    <input asp-for="name" placeholder="Full Name*" type="text" class="form-control" />
+                </div>
+                <div class="form-group mt-2">
+                    <textarea asp-for="address_contact" placeholder="Address*" class="form-control"></textarea>
+                </div>
+            </div>
+            <div class="col-4 ">
+                <img id="image" />
+
+                <div class="form-group mt-2 mb-2">
+                    <input style="width:80%" onchange="photoUpload(event)" asp-for="imgFile" class="form-control" />
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <hr />
+            <div class="form-group mt-2">
+                <textarea asp-for="careerObjective" placeholder="Career Objective*" class="form-control"></textarea>
             </div>
             <div class="form-group mt-2">
-                <textarea onchange="" placeholder="Address" class="form-control"> </textarea>
+                <textarea asp-for="specialQualification" placeholder="Special Qualification*" class="form-control"></textarea>
             </div>
-        </div>
-        <div class="col-4 ">
-            <img id="image" />
 
-            <div class="form-group mt-2 mb-2">
-                <input style="width:80%" onchange="photoUpload(event)" type="file" class="form-control" />
+            <div class="form-group mt-2">
+                <textarea asp-for="projectsHistory" placeholder="Project History*" class="form-control"></textarea>
             </div>
+            <div class="form-group mt-2">
+                <input asp-for="titleOne" placeholder="Title One*" class="form-control" />
+            </div>
+            <div class="form-group mt-2">
+                <textarea asp-for="titleOneDecs" placeholder="Title One Description*" class="form-control"></textarea>
+            </div>
+            <div class="form-group mt-2">
+                <label>Training Summary*</label>
+                @{
+                    await Html.RenderPartialAsync("_training", @Model.trainingSummary);
+                }
+            </div>
+            <div class="form-group mt-2">
+                <label>Academic Qualification*</label>
+                @{
+                    await Html.RenderPartialAsync("_academic", @Model.academicQualificatio);
+                }
+            </div>
+
         </div>
 
-    </div>
-    <div class="row">
-        <hr />
-        <div class="form-group mt-2">
-            <textarea onchange="" placeholder="Career Objective" class="form-control"> </textarea>
-        </div>
-        <div class="form-group mt-2">
-            <textarea onchange="" placeholder="Special Qualification" class="form-control"> </textarea>
-        </div>
-        <div class="form-group mt-2">
-            <textarea onchange="" placeholder="Project History" class="form-control"> </textarea>
-        </div>
-    </div>
-</div>
+</form>

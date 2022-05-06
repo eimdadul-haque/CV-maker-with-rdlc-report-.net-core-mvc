@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using CV_Maker_with_RDLC_Report_.Net_Core_MVC.Models;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Reporting.NETCore;
 using System.Data;
 using System.Diagnostics;
@@ -16,8 +17,19 @@ namespace CV_Maker_with_RDLC_Report_.Net_Core_MVC.Controllers
             _environment = environment;
         }
 
+        [HttpGet]
         public IActionResult Index()
         {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Index(CV_Model cv)
+        {
+            if(ModelState.IsValid)
+            {
+
+            }
             return View();
         }
 
