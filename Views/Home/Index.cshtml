@@ -4,7 +4,7 @@
     ViewData["Title"] = "Home Page";
 }
 
-<form method="post" asp-controller="Home" asp-action="Index">
+<form method="post" asp-controller="Home" asp-action="Index" enctype="multipart/form-data">
     <div class="container">
         <div class="row d-flex justify-content-between align-items-center">
             <div class="col-6 ">
@@ -111,7 +111,7 @@
                         </td>
                         <td>
                             <div class="form-group mt-2">
-                                <input asp-for="institute" class="form-control" />
+                                <input asp-for="varsity" class="form-control" />
                             </div>
                         </td>
                         <td>
